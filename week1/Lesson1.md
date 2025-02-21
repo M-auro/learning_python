@@ -108,3 +108,13 @@ with open('example.txt', 'w') as file:
     file.write("Hello, world!")
 
 ```
+
+### Week 1 project description
+
+The provided script is designed to automate the process of pulling a Docker image and scanning it for vulnerabilities using podman and trivy. The script begins by importing the subprocess module, which allows the execution of shell commands from within the Python script.
+
+The pull_docker_image function takes an image name as an argument and attempts to pull the specified Docker image from Docker Hub using the podman pull command. It prints a message indicating the image being pulled and uses subprocess.run to execute the command. If the command fails, it catches the subprocess.CalledProcessError exception and prints an error message.
+
+The scan_image function also takes an image name as an argument and scans the specified image for vulnerabilities using trivy, a popular vulnerability scanner. It prints a message indicating the image being scanned and uses subprocess.run to execute the podman run command with trivy. Similar to the previous function, it catches any subprocess.CalledProcessError exceptions and prints an error message if the command fails.
+
+The script's main block sets the image_name variable to the latest Nginx image from Docker Hub. It then calls the pull_docker_image function to pull the image and the scan_image function to scan it for vulnerabilities. This setup allows users to easily change the image being pulled and scanned by modifying the image_name variable.
