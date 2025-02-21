@@ -8,7 +8,7 @@ NAME = "frodo"   # string
 IS_COOL = True   # Boolean
 
 # To print the value of a variable, you can use the print
-print(x)
+print(X)
 
 # You can also assign multiple variables in one line
 A, B, C = 1, 2, 3 
