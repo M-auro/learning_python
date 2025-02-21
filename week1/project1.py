@@ -28,6 +28,6 @@ def scan_image(image):
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    IMAGE_NAME = "docker.io/library/nginx:latest"  # change this to the image you want to pull and scan
+    IMAGE_NAME = "docker.io/library/nginx:latest"  # change this to the image you want
     pull_docker_image(IMAGE_NAME)
     scan_image(IMAGE_NAME)

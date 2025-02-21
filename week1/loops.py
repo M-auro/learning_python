@@ -30,7 +30,7 @@ while COUNT < 5:
         break
     COUNT += 1
 
-# The continue statement is used to stop the current iteration of the loop and continue with the next.
+# Continue statement is used to stop the current iteration of the loop and continue with the next.
 # Example of a continue statement
 COUNT = 0
 while COUNT < 5:
