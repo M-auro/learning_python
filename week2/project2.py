@@ -5,12 +5,11 @@
 # list_pods(namespace)
 # This function should list all running pods in the given namespace.
 #
-# The script should be able to run as a standalone script and list all running pods in the default namespace.
-#
-# The script should be able to run as a standalone script and list all running pods in a given namespace.
-#
-# The script should be able to run as a module and list all running pods in the default namespace.
-#
+# The script should be able to run as a standalone script and list all running pods:
+# In the default.
+# In a given namespace
+
+
 
 import os
 from kubernetes import client, config # Import the required libraries

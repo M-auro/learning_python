@@ -22,4 +22,3 @@ def list_buckets(region_name='us-east-1'):
 
 if __name__ == "__main__":
     list_buckets(region_name='us-east-1')  # You can replace 'us-east-1' with any desired region
-
